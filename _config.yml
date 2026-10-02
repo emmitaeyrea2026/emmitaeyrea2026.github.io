@@ -23,11 +23,11 @@ author:
   avatar           : "profile.png"
   name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Dra. en Matemática"
+  location         : "La Plata, Argentina"
+  employer         : "Universidad Nacional de La Plata"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "maemma@mate.unlp.edu.ar" 
 
   # Academic websites
   academia         : # URL
