@@ -1,6 +1,7 @@
 ---
 title: "Symmetries and periodic orbits in simple hybrid Routhian systems"
 collection: publications
+category: manuscripts
 permalink: /publication/2020-symmetries-periodic-orbits
 date: 2020-01-01
 venue: "Nonlinear Analysis: Hybrid Systems"
