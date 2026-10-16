@@ -319,6 +319,12 @@
 
     &:hover {
       text-decoration: underline;
+       /* Sidebar divider accent */
+@media screen and (min-width: 64em) {
+  .sidebar {
+    border-right: 4px solid #A3B18A;
+  }
+}
     }
   }
 }
