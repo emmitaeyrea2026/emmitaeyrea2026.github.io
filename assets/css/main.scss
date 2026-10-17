@@ -116,3 +116,186 @@ thead {
   background: #EEF1EB;
   border-top: 1px solid #DCE8D5;
 }
+
+/* ==========================================================================
+   EMMA'S HOMEPAGE
+   ========================================================================== */
+
+.emma-home {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0.5rem 0 1rem;
+  color: #514F59;
+}
+
+.emma-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(220px, 0.8fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: clamp(1.5rem, 5vw, 4rem);
+  background: #F7F4FB;
+  border: 1px solid #F0EAF8;
+  border-radius: 16px;
+}
+
+.emma-hero__content {
+  min-width: 0;
+}
+
+.emma-hero__accent {
+  display: block;
+  width: 42px;
+  height: 4px;
+  margin-bottom: 1rem;
+  background: #8DAA80;
+  border-radius: 10px;
+}
+
+.emma-hero h1 {
+  margin: 0 0 1.25rem;
+  color: #7864A8;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.12;
+}
+
+.emma-hero p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.emma-hero p.emma-hero__intro {
+  font-size: 1.08rem;
+}
+
+.emma-hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+a.emma-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+  padding: 0.7rem 1.35rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+a.emma-button:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+a.emma-button--sage {
+  background: #78966B;
+  color: #FFFFFF;
+}
+
+a.emma-button--sage:hover {
+  background: #627F57;
+  color: #FFFFFF;
+}
+
+a.emma-button--lilac {
+  background: #E7E0F4;
+  color: #5E4B8B;
+}
+
+a.emma-button--lilac:hover {
+  background: #DCD1EE;
+  color: #5E4B8B;
+}
+
+a.emma-button--pale {
+  background: #DCE8D5;
+  color: #40563B;
+}
+
+a.emma-button--pale:hover {
+  background: #C9DABF;
+  color: #40563B;
+}
+
+/* Circular portrait area: replace the placeholder with your photo later */
+.emma-hero__portrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.emma-hero__photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: min(100%, 300px);
+  aspect-ratio: 1;
+  border: 2px solid #A3B18A;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #7864A8;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 0 0 8px rgba(220, 232, 213, 0.35);
+}
+
+.emma-hero__photo-symbol {
+  color: #8DAA80;
+  font-size: 3rem;
+}
+
+/* Decorative sage divider */
+.emma-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 2.5%;
+  color: #8DAA80;
+}
+
+.emma-divider span:first-child,
+.emma-divider span:last-child {
+  flex: 1;
+  height: 1px;
+  background: #C6D5BD;
+}
+
+.emma-divider__leaf {
+  font-size: 1.7rem;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  .emma-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .emma-hero__portrait {
+    grid-row: 1;
+  }
+
+  .emma-hero__photo-placeholder {
+    width: min(65%, 220px);
+  }
+
+  .emma-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .emma-hero__buttons {
+    gap: 0.6rem;
+  }
+}
