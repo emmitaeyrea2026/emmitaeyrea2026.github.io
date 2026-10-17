@@ -2,10 +2,8 @@
 ---
 
 /*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * Main stylesheet for the website.
+ * Theme and layout imports.
  */
 
 @import
@@ -37,3 +35,84 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* ==========================================================================
+   SOFT VIOLET AND SAGE DESIGN
+   ========================================================================== */
+
+:root {
+  --emma-violet: #7864A8;
+  --emma-violet-dark: #5E4B8B;
+  --emma-lilac: #F7F4FB;
+  --emma-lilac-button: #E7E0F4;
+  --emma-sage: #78966B;
+  --emma-sage-light: #DCE8D5;
+}
+
+/* General links */
+a {
+  transition: color 0.2s ease-in-out;
+}
+
+/* Main navigation */
+.masthead {
+  background-color: #F7F4FB;
+  border-bottom: 1px solid #DCE8D5;
+}
+
+.greedy-nav {
+  background: #F7F4FB;
+}
+
+/* Sidebar accent */
+@media screen and (min-width: 64em) {
+  .sidebar {
+    border-right: 4px solid #A3B18A;
+    padding-right: 1.5em;
+  }
+}
+
+/* Rounded buttons */
+.btn {
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Pagination */
+.pagination li a,
+.pagination--pager {
+  border-radius: 999px;
+  border-color: #DCE8D5;
+}
+
+.pagination li a.current {
+  background: #78966B;
+  border-color: #78966B;
+  color: #FFFFFF;
+}
+
+/* Code blocks */
+div.highlighter-rouge,
+figure.highlight {
+  border-radius: 12px;
+  background: #F7F4FB;
+}
+
+/* Tables */
+table {
+  border-color: #DCE8D5;
+}
+
+thead {
+  background: #F7F4FB;
+}
+
+/* Footer */
+.page__footer {
+  background: #EEF1EB;
+  border-top: 1px solid #DCE8D5;
+}
