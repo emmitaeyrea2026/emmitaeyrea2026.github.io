@@ -243,7 +243,7 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: var(--global-border-color);
+        background: #78966B;
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
@@ -253,9 +253,10 @@
       }
 
       &:hover:before {
-        -webkit-transform: scaleX(1);
-            -ms-transform: scaleX(1);
-                transform: scaleX(1); /* reveal*/
+      background: #8C78C4;
+      -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+          transform: scaleX(1);
       }
     }
   }
