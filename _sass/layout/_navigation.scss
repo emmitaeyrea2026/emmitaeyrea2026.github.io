@@ -175,7 +175,8 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: var(--global-bg-color);
+  background: #F7F4FB;
+  border-radius: 14px;
 
   a {
     display: block;
@@ -234,23 +235,29 @@
       }
     }
 
-    a {
-      position: relative;
+   
+a {
+  position: relative;
+  z-index: 1;
 
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 4px;
-        background: #78966B;
-        width: 100%;
-        -webkit-transition: $global-transition;
-        transition: $global-transition;
-        -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-                transform: scaleX(0); /* hide*/
-      }
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: #78966B;
+    border-radius: 4px 4px 0 0;
+    transition: $global-transition;
+    transform: scaleX(0);
+  }
+
+  &:hover:before {
+    background: #8C78C4;
+    transform: scaleX(1);
+  }
+}
 
       &:hover:before {
       background: #8C78C4;
@@ -271,15 +278,17 @@
     border-radius: $border-radius;
     background: var(--global-bg-color);
     box-shadow: 0 0 10px rgba(#000, 0.25);
-
+    border: 1px solid #DCE8D5;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(82, 65, 112, 0.10);
     a {
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
 
       &:hover {
-        color: var(--global-masthead-link-color-hover);
-        background: var(--global-border-color);
+        background: #F7F4FB;
+        border-radius: 8px;
       }
     }
 
