@@ -1,3 +1,4 @@
+
 ---
 permalink: /
 title: "About"
@@ -8,7 +9,6 @@ redirect_from:
 ---
 
 <div class="emma-home">
-
   <section class="emma-hero">
 
     <div class="emma-hero__content">
@@ -67,5 +67,4 @@ redirect_from:
     <span class="emma-divider__leaf">❧</span>
     <span></span>
   </div>
-
 </div>
